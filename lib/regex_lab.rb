@@ -23,7 +23,7 @@ if  text.scan(/\w+{5}\b/) == 5
   # ^[a-zA-Z]{5}$
 #  text.match(/[.....]/) == true
 return text
-else !!false
+
   end
 end
 
