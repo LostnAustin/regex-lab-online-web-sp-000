@@ -33,7 +33,7 @@ end
 
 def valid_phone_number?(phone)
   #  phone.scan(/^\W{8-11}$/)
-  binding.pry
+#  binding.pry
     #start of line/ any non-word character(length between 6-8/  any non-word character(length between 3,5)) / end of line
     2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
 
