@@ -27,7 +27,7 @@ def words_five_letters_long(text)
   # returned  NoMethodError:
 #       undefined method `count' for false:FalseClass
 
-text.scan(/\A\w+[a-zA-Z]{5}\z)
+text.scan(/\A\w+[a-zA-Z]{5}\z/)
  # text.scan(/^\w +[a-zA-Z]{5}\z/)
  #start of line, any character regular or capitalized, length of 5, end of line
 
@@ -35,7 +35,7 @@ text.scan(/\A\w+[a-zA-Z]{5}\z)
 #if text.length == 5
 #return text[]
   end
-end
+
 
 #def first_word_capitalized_and_ends_with_punctuation?(text)
 #  text.scan(/\A^/ && //)
