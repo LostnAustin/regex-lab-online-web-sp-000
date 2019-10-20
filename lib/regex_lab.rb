@@ -19,13 +19,15 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-
+ text.scan(\w+[a-zA-Z]{5})
   # text.scan(/\w+{5}\b/) == 5
-  # text.scan(^[a-zA-Z]{5}$)
-#  text.match(/[.....]/) == true
-if text.length == 5
-return text[]
+  #any word character, exactly 5 length, word boundary
 
+# text.scan(^[a-zA-Z]{5}$)
+
+#  text.match(/[.....]/) == true
+#if text.length == 5
+#return text[]
   end
 end
 
