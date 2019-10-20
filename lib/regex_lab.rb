@@ -33,5 +33,5 @@ end
 
 def valid_phone_number?(phone)
   !!phone.match(/\b\d[0-9]{10-15}\b/)
-  #zero or one ":" or any word boundary, a number with length of 10 using digits 0-9, followed by word boundary
+  # a boundary /  with length of 10-15 digits using 0-9 / word boundary
 end
