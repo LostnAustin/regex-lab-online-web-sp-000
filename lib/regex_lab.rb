@@ -28,8 +28,8 @@ def words_five_letters_long(text)
 #       undefined method `count' for false:FalseClass
 
 
- text.scan(/^[a-zA-Z]{5}$/)
-
+ text.scan(/^\w +[a-zA-Z]{5}$/)
+ #start of line, 
 #  text.match(/[.....]/) == true
 #if text.length == 5
 #return text[]
