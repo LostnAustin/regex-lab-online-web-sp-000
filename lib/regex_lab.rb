@@ -40,7 +40,7 @@ def valid_phone_number?(phone)
 #   valid_numbers = ["28894546", "(718)891-13135", "234 43 9978", "(800)IloveNY
 #\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z 
 
- phone.scan(/\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z /)
+ phone.match(/\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z /)
   #  phone.scan(/^\d{8}-\d{9-12}$\b/)
 
   #!!phone.match(/\b\d[0-9]{10-15}\b/)
