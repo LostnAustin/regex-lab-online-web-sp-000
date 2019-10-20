@@ -32,8 +32,8 @@ end
 
 
 def valid_phone_number?(phone)
-    phone.scan(/^\W{6,9}\W{3,5}$/)
-    #start of line/ any non-word character(length between 6-8/  - / any non-word character(length between 3,5)) / end of line
+    phone.scan(/^\W{5-7}\W{3,5}$/)
+    #start of line/ any non-word character(length between 6-8/  any non-word character(length between 3,5)) / end of line
 #  phone.scan(/^\W{8}-\d{9-12}$\b/)
   #  phone.scan(/^\d{8}-\d{9-12}$\b/)
 
