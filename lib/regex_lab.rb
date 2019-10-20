@@ -32,7 +32,7 @@ end
 
 
 def valid_phone_number?(phone)
-  phone.scan(/^\W{8}-\d{9-12}$\b/)
+  phone.scan(/^\W{8}-\d{9-12}/)
   #  phone.scan(/^\d{8}-\d{9-12}$\b/)
 
   #!!phone.match(/\b\d[0-9]{10-15}\b/)
