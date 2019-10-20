@@ -32,9 +32,8 @@ end
 
 
 def valid_phone_number?(phone)
-  if phone.scan(/^\d{8}-\d{9-12}$\b/)#
-    return true
-  else return false
+  phone.scan(/^\d{8}-\d{9-12}$\b/)#
+    
   #!!phone.match(/\b\d[0-9]{10-15}\b/)
   # a boundary /  with length of 10-15 digits using 0-9 / word boundary
-end end
+ end
