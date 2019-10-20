@@ -35,7 +35,7 @@ text.scan(/\A\w+[a-zA-Z]{5}\z)
 #if text.length == 5
 #return text[]
   end
-
+end
 
 #def first_word_capitalized_and_ends_with_punctuation?(text)
 #  text.scan(/\A^/ && //)
