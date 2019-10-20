@@ -28,17 +28,12 @@ def words_five_letters_long(text)
 #       undefined method `count' for false:FalseClass
 
 text.scan(/\b[a-zA-Z]{5}\b/)
- # text.scan(/^\w +[a-zA-Z]{5}\z/)
- #start of line, any character regular or capitalized, length of 5, end of line
-
-#  text.match(/[.....]/) == true
-#if text.length == 5
-#return text[]
+ # word boundary/ word 5 letters long from a-zA-Z / word boundary
   end
 
 
 #def first_word_capitalized_and_ends_with_punctuation?(text)
-#  text.scan(/\A^/ && //)
+ text.scan(/\A[A-Z] && \W\z/)
 #end
 
 def valid_phone_number?(phone)
