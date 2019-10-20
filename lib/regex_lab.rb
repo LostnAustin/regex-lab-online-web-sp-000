@@ -19,12 +19,13 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-  text.scan(/\w+{5}\b/)
+if  text.scan(/\w+{5}\b/) == 5
   # ^[a-zA-Z]{5}$
 #  text.match(/[.....]/) == true
 return text
+else false
   end
-
+end
 
 #def first_word_capitalized_and_ends_with_punctuation?(text)
 #  text.scan(/\A^/ && //)
