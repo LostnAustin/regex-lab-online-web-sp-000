@@ -33,8 +33,9 @@ text.scan(/\b[a-zA-Z]{5}\b/)
 
 
 #def first_word_capitalized_and_ends_with_punctuation?(text)
- text.scan(/\A[A-Z] && \W\z/)
+ text.match(/\A[A-Z] && \W\z/)
 end
+
 
 def valid_phone_number?(phone)
   !!phone.match(/(?:\+?|\b)[0-9]{10}\b/)
