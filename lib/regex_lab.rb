@@ -32,8 +32,12 @@ end
 
 
 def valid_phone_number?(phone)
-    phone.scan(/^\W{5-7}\W{3,5}$/)
+    phone.scan(/^\W{8-11}$/)
     #start of line/ any non-word character(length between 6-8/  any non-word character(length between 3,5)) / end of line
+    2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
+
+    valid_numbers = ["28894546", "(718)891-13135", "234 43 9978", "(800)IloveNY
+
 #  phone.scan(/^\W{8}-\d{9-12}$\b/)
   #  phone.scan(/^\d{8}-\d{9-12}$\b/)
 
