@@ -27,7 +27,7 @@ def words_five_letters_long(text)
   # returned  NoMethodError:
 #       undefined method `count' for false:FalseClass
 
-text.scan(/\A\w+[a-zA-Z]{5}\z/)
+text.scan(/\b[a-zA-Z]{5}\b/)
  # text.scan(/^\w +[a-zA-Z]{5}\z/)
  #start of line, any character regular or capitalized, length of 5, end of line
 
@@ -43,4 +43,5 @@ text.scan(/\A\w+[a-zA-Z]{5}\z/)
 
 def valid_phone_number?(phone)
   !!phone.match(/(?:\+?|\b)[0-9]{10}\b/)
+  #zero or one ":" or any word boundary, a number with length of 10 using digits 0-9, followed by word boundary
 end
