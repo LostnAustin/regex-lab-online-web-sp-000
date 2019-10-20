@@ -33,7 +33,8 @@ text.scan(/\b[a-zA-Z]{5}\b/)
 
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
- !!text.match(/\A[A-Z] && \W\z/)
+ !!text.match(/\A[A-Z]\W\z/)
+ # /\A[A-Z]\W\z/
 end
 
 
