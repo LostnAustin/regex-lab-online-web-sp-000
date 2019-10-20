@@ -22,14 +22,14 @@ def words_five_letters_long(text)
  #text.scan(/\w+[a-zA-Z]{5}\b/) resulted in 3 out of 6
  #any word character, regular or capitalized, exactly 5 length, word boundary
 
-   text.scan(/\w+{5}\b/) == 5
+  # text.scan(/\w+{5}\b/) == 5
   #any word character, exactly 5 length, word boundary
   # returned  NoMethodError:
 #       undefined method `count' for false:FalseClass
 
 
- text.scan(/^\w +[a-zA-Z]{5}$/)
- #start of line,
+ text.scan(/^\w +[a-zA-Z]{5}\z/)
+ #start of line, any character regular or capitalized, length of 5, enf of line
 #  text.match(/[.....]/) == true
 #if text.length == 5
 #return text[]
