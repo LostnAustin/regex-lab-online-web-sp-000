@@ -32,7 +32,7 @@ end
 
 
 def valid_phone_number?(phone)
-  !!phone.match(/^\W{8}-\W{9-12}$/)#
+  !!phone.match(/^\W{8}-\d{9-12}$/)#
   #!!phone.match(/\b\d[0-9]{10-15}\b/)
   # a boundary /  with length of 10-15 digits using 0-9 / word boundary
 end
