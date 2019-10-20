@@ -19,13 +19,10 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-  if String.length > 5
-    return false
-  else
-    return true
-  #text.scan(/\w+{5}\b/)
+  text.scan(/\w+{5}\b/)
   # ^[a-zA-Z]{5}$
 #  text.match(/[.....]/) == true
+return text
   end
 end
 
